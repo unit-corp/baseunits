@@ -15,9 +15,11 @@ ext {
 	describedCommit = git.describe(tags: true).toString().trim()
 }
 
-version = describedCommit +
-	(describedCommit.matches(".*-[0-9]+-g[0-9a-f]{7}") ? "-SNAPSHOT" : "") +
-	(git.status().isClean() ? "" : "+dirty")
+//version = describedCommit +
+//	(describedCommit.matches(".*-[0-9]+-g[0-9a-f]{7}") ? "-SNAPSHOT" : "")
+//	+ (git.status().isClean() ? "" : "+dirty")
+version = "3.0.0"
+description "The library contains domain models related to basic units"
 
 task showVersion {
 	doLast {

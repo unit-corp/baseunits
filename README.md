@@ -9,7 +9,7 @@ require Java 8 or later.
 
 If you're using Maven, add this to your pom.xml under the <repositories> and <dependencies> section:
 
-### v2.17 or later (UNIT Technology Corporation will keep making updates and enhancements for upcoming iterations)
+### v3.0.0 or later (UNIT Technology Corporation will keep making updates and enhancements for upcoming iterations)
 
 * repositories: mavenCentral
 * groupId: `vn.com.unit.spar-wings`
