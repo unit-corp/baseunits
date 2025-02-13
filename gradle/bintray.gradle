@@ -26,26 +26,27 @@ publishing {
 		}
 	}
 }
-
-bintray {
-	user = System.env.BINTRAY_USER
-	key = System.env.BINTRAY_KEY
-	publications = ["mavenJava"]
-	dryRun = System.env.CIRCLE_TAG == null
-	publish = true
-	pkg {
-		repo = "maven"
-		name = project.name
-		desc = "The models of basic unit (ex. Time, Money, etc.)"
-		websiteUrl = "https://github.com/dai0304/baseunits"
-		issueTrackerUrl = "https://github.com/dai0304/baseunits/issues"
-		vcsUrl = "https://github.com/dai0304/baseunits.git"
-		licenses = ["Apache-2.0"]
-		labels = ["Date", "Time", "Money"]
-		githubRepo = 'dai0304/baseunits'
-		version {
-			name = project.version
-			vcsTag = project.version
+if (System.env.BINTRAY_USER && System.env.BINTRAY_KEY) {
+	bintray {
+		user = System.env.BINTRAY_USER
+		key = System.env.BINTRAY_KEY
+		publications = ["mavenJava"]
+		dryRun = System.env.CIRCLE_TAG == null
+		publish = true
+		pkg {
+			repo = "maven"
+			name = project.name
+			desc = "The models of basic unit (ex. Time, Money, etc.)"
+			websiteUrl = "https://github.com/dai0304/baseunits"
+			issueTrackerUrl = "https://github.com/dai0304/baseunits/issues"
+			vcsUrl = "https://github.com/dai0304/baseunits.git"
+			licenses = ["Apache-2.0"]
+			labels = ["Date", "Time", "Money"]
+			githubRepo = 'dai0304/baseunits'
+			version {
+				name = project.version
+				vcsTag = project.version
+			}
 		}
 	}
 }

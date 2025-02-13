@@ -20,13 +20,13 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Iterator;
 
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.CalendarInterval;
-import jp.xet.baseunits.time.DayOfWeek;
-import jp.xet.baseunits.time.Duration;
-import jp.xet.baseunits.time.MonthOfYear;
-import jp.xet.baseunits.time.spec.DateSpecification;
-import jp.xet.baseunits.time.spec.DateSpecifications;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.CalendarInterval;
+import vn.com.unit.sparwings.baseunits.time.DayOfWeek;
+import vn.com.unit.sparwings.baseunits.time.Duration;
+import vn.com.unit.sparwings.baseunits.time.MonthOfYear;
+import vn.com.unit.sparwings.baseunits.time.spec.DateSpecification;
+import vn.com.unit.sparwings.baseunits.time.spec.DateSpecifications;
 
 import org.junit.Test;
 

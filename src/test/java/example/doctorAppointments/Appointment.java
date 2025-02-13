@@ -15,7 +15,7 @@
  */
 package example.doctorAppointments;
 
-import jp.xet.baseunits.time.TimePointInterval;
+import vn.com.unit.sparwings.baseunits.time.TimePointInterval;
 
 class Appointment {
 	

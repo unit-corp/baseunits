@@ -21,8 +21,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.TimeZone;
 
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.TimePointInterval;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.TimePointInterval;
 
 class AppointmentCalendar {
 	

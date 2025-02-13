@@ -9,7 +9,15 @@ require Java 8 or later.
 
 If you're using Maven, add this to your pom.xml under the <repositories> and <dependencies> section:
 
-### v2.16 or later
+### v2.17 or later (UNIT Technology Corporation will keep making updates and enhancements for upcoming iterations)
+
+* repositories: mavenCentral
+* groupId: `vn.com.unit.spar-wings`
+* artifactId: `baseunits`
+
+see <https://github.com/unit-corp/baseunits>
+
+### v2.16
 
 * repositories: jcenter
 * groupId: `jp.xet`
@@ -50,7 +58,7 @@ assertThat(mlkLifetime.length(), is(Duration.days(14325)));
 ```
 
 ## License
-
+* Copyright (C) 2025 [UNIT Technology Corporation](https://unit.com.vn)
 * Copyright (C) 2011-2019 [Daisuke Miyamoto](http://d.hatena.ne.jp/daisuke-m/)
 * Copyright (C) 2010-2011 TRICREO, Inc.
 * Copyright (c) 2004 [Domain Language, Inc.](http://domainlanguage.com)

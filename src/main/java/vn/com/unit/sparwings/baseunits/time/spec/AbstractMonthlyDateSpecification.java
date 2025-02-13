@@ -1,0 +1,85 @@
+/*
+ * Copyright 2010-2019 Miyamoto Daisuke.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package vn.com.unit.sparwings.baseunits.time.spec;
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.CalendarInterval;
+import vn.com.unit.sparwings.baseunits.time.CalendarMonth;
+import vn.com.unit.sparwings.baseunits.util.ImmutableIterator;
+
+import com.google.common.base.Preconditions;
+
+/**
+ * 毎月1度だけマッチする暦日仕様の骨格実装。
+ * 
+ * @author daisuke
+ * @since 1.0
+ */
+public abstract class AbstractMonthlyDateSpecification extends AbstractDateSpecification implements
+		MonthlyDateSpecification {
+	
+	@Override
+	public CalendarDate firstOccurrenceIn(CalendarInterval interval) {
+		Preconditions.checkNotNull(interval);
+		Preconditions.checkArgument(interval.hasLowerLimit());
+		CalendarMonth month = interval.start().asCalendarMonth();
+		
+		CalendarDate firstTry = ofYearMonth(month);
+		if (interval.includes(firstTry)) {
+			return firstTry;
+		}
+		
+		CalendarDate secondTry = ofYearMonth(month.nextMonth());
+		if (interval.includes(secondTry)) {
+			return secondTry;
+		}
+		return null;
+	}
+	
+	@Override
+	public Iterator<CalendarDate> iterateOver(final CalendarInterval interval) {
+		Preconditions.checkNotNull(interval);
+		return new ImmutableIterator<CalendarDate>() {
+			
+			CalendarDate next = firstOccurrenceIn(interval);
+			
+			CalendarMonth month = next.asCalendarMonth();
+			
+			
+			@Override
+			public boolean hasNext() {
+				return next != null;
+			}
+			
+			@Override
+			public CalendarDate next() {
+				if (hasNext() == false) {
+					throw new NoSuchElementException();
+				}
+				CalendarDate current = next;
+				month = month.nextMonth();
+				next = AbstractMonthlyDateSpecification.this.ofYearMonth(month);
+				if (interval.includes(next) == false) {
+					next = null;
+				}
+				return current;
+			}
+		};
+	}
+}

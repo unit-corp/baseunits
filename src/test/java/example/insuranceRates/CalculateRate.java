@@ -20,16 +20,16 @@ import static org.junit.Assert.assertThat;
 
 import java.math.RoundingMode;
 
-import jp.xet.baseunits.intervals.Interval;
-import jp.xet.baseunits.intervals.IntervalMap;
-import jp.xet.baseunits.intervals.LinearIntervalMap;
-import jp.xet.baseunits.money.Money;
-import jp.xet.baseunits.money.MoneyTimeRate;
-import jp.xet.baseunits.money.Proration;
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.CalendarInterval;
-import jp.xet.baseunits.time.Duration;
-import jp.xet.baseunits.util.Ratio;
+import vn.com.unit.sparwings.baseunits.intervals.Interval;
+import vn.com.unit.sparwings.baseunits.intervals.IntervalMap;
+import vn.com.unit.sparwings.baseunits.intervals.LinearIntervalMap;
+import vn.com.unit.sparwings.baseunits.money.Money;
+import vn.com.unit.sparwings.baseunits.money.MoneyTimeRate;
+import vn.com.unit.sparwings.baseunits.money.Proration;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.CalendarInterval;
+import vn.com.unit.sparwings.baseunits.time.Duration;
+import vn.com.unit.sparwings.baseunits.util.Ratio;
 
 import org.junit.Test;
 

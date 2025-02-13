@@ -15,17 +15,17 @@
  */
 package example.schedule;
 
-import static jp.xet.baseunits.time.DayOfWeek.FRIDAY;
-import static jp.xet.baseunits.time.DayOfWeek.MONDAY;
-import static jp.xet.baseunits.time.DayOfWeek.WEDNESDAY;
+import static vn.com.unit.sparwings.baseunits.time.DayOfWeek.FRIDAY;
+import static vn.com.unit.sparwings.baseunits.time.DayOfWeek.MONDAY;
+import static vn.com.unit.sparwings.baseunits.time.DayOfWeek.WEDNESDAY;
 
 import java.util.Iterator;
 
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.CalendarInterval;
-import jp.xet.baseunits.time.CalendarMonth;
-import jp.xet.baseunits.time.spec.DateSpecification;
-import jp.xet.baseunits.time.spec.DateSpecifications;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.CalendarInterval;
+import vn.com.unit.sparwings.baseunits.time.CalendarMonth;
+import vn.com.unit.sparwings.baseunits.time.spec.DateSpecification;
+import vn.com.unit.sparwings.baseunits.time.spec.DateSpecifications;
 
 import org.junit.Test;
 import org.slf4j.Logger;

@@ -20,10 +20,10 @@ import static org.junit.Assert.assertThat;
 
 import java.util.TimeZone;
 
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.Duration;
-import jp.xet.baseunits.time.TimePoint;
-import jp.xet.baseunits.time.TimePointInterval;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.Duration;
+import vn.com.unit.sparwings.baseunits.time.TimePoint;
+import vn.com.unit.sparwings.baseunits.time.TimePointInterval;
 
 import org.junit.Test;
 

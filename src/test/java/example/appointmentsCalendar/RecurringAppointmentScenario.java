@@ -20,10 +20,10 @@ import static org.hamcrest.Matchers.is;
 
 import java.util.TimeZone;
 
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.Duration;
-import jp.xet.baseunits.time.TimeOfDay;
-import jp.xet.baseunits.time.TimePoint;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.Duration;
+import vn.com.unit.sparwings.baseunits.time.TimeOfDay;
+import vn.com.unit.sparwings.baseunits.time.TimePoint;
 
 import org.junit.Test;
 

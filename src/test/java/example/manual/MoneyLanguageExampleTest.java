@@ -23,10 +23,10 @@ import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.Currency;
 
-import jp.xet.baseunits.money.Money;
-import jp.xet.baseunits.money.MoneyTimeRate;
-import jp.xet.baseunits.money.Proration;
-import jp.xet.baseunits.time.Duration;
+import vn.com.unit.sparwings.baseunits.money.Money;
+import vn.com.unit.sparwings.baseunits.money.MoneyTimeRate;
+import vn.com.unit.sparwings.baseunits.money.Proration;
+import vn.com.unit.sparwings.baseunits.time.Duration;
 
 import org.junit.Test;
 

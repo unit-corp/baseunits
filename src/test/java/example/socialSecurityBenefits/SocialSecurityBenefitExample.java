@@ -17,10 +17,10 @@ package example.socialSecurityBenefits;
 
 import java.math.RoundingMode;
 
-import jp.xet.baseunits.money.Money;
-import jp.xet.baseunits.time.CalendarDate;
-import jp.xet.baseunits.time.CalendarInterval;
-import jp.xet.baseunits.util.Ratio;
+import vn.com.unit.sparwings.baseunits.money.Money;
+import vn.com.unit.sparwings.baseunits.time.CalendarDate;
+import vn.com.unit.sparwings.baseunits.time.CalendarInterval;
+import vn.com.unit.sparwings.baseunits.util.Ratio;
 import junit.framework.TestCase;
 
 import org.junit.Ignore;
